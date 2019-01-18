@@ -1,0 +1,10 @@
+| +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |   | +---+ | +---+ | +---+ | +---+ | +---+ |
+| |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | | |   | |   | |   | | |   | | |   | | |   | | |   | |
+| |R  | | |A  | | |T  | | |E  | | |S  | | |H  | | |W  | | |A  | | |R  | |   | |S  | | |.  | | |C  | | |.  | | |S  | |
+| +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ | +---+ |   | +---+ | +---+ | +---+ | +---+ | +---+ |
+
+# Neat trick for OSX is to create a loopback interface to setup the macbook as wifi hot spot for using with BURP
+# Requires an ethernet connection to internet
+
+sudo networksetup -createnetworkservice Loopback lo0
+sudo networksetup -setmanual Loopback 172.20.42.42 255.255.255.255
