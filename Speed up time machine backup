@@ -1,0 +1,7 @@
+Speed up time machine backup terminal command:
+
+sudo sysctl debug.lowpri_throttle_enabled=0
+
+Return to default when done (recommended):
+
+sudo sysctl debug.lowpri_throttle_enabled=1
